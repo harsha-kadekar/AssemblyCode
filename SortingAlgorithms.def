@@ -1,0 +1,8 @@
+LIBRARY SortingAlgorithms
+EXPORTS 
+InsertionSort
+MergeSort
+BubbleSort
+QuickSort
+HeapSort
+TestFunc

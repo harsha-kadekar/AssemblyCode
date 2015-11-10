@@ -1,0 +1,30 @@
+#define IDM_NEW 1
+#define IDM_SAVE 2
+#define IDM_OPEN 3
+#define IDM_EXIT 4
+#define IDM_UNDO 5
+#define IDM_COPY 6
+#define IDM_CUT 7
+#define IDM_PASTE 8
+#define IDM_HELP 9
+
+FirstMenu MENU
+{
+	POPUP "&File"
+	{
+		MENUITEM "&New", IDM_NEW
+		MENUITEM "&Save", IDM_SAVE
+		MENUITEM "&Open", IDM_OPEN
+		MENUITEM SEPARATOR
+		MENUITEM "E&xit", IDM_EXIT
+	}
+	POPUP "&Edit"
+	{
+		MENUITEM "&Undo", IDM_UNDO
+		MENUITEM SEPARATOR
+		MENUITEM "COPY", IDM_COPY
+		MENUITEM "CUT", IDM_CUT
+		MENUITEM "PASTE", IDM_PASTE
+	}
+	MENUITEM "&Help", IDM_HELP
+}

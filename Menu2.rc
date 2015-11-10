@@ -1,0 +1,16 @@
+#define IDM_HELLO 1 
+#define IDM_CLEAR 2 
+#define IDM_GETTEXT 3 
+#define IDM_EXIT 4
+
+FirstMenu MENU 
+{ 
+ POPUP "&PopUp" 
+        { 
+         MENUITEM "&Hello",IDM_HELLO 
+         MENUITEM "Clear", IDM_CLEAR 
+	 MENUITEM "GetText", IDM_GETTEXT
+         MENUITEM SEPARATOR 
+         MENUITEM "Exit",IDM_EXIT 
+        }  
+} 

@@ -1,0 +1,32 @@
+#define IDC_EDIT                                      1002
+#define IDC_BUTTON                                1003	 
+
+
+#define IDM_SET		1001
+#define IDM_CLEAR       1002 
+#define IDM_GET         1003 
+#define IDM_EXIT        1004 
+ 
+
+FirstDialog DIALOG 10, 10, 205, 60 
+STYLE 0x0004 | DS_CENTER | WS_CAPTION | WS_MINIMIZEBOX | 
+WS_SYSMENU | WS_VISIBLE | WS_OVERLAPPED | DS_MODALFRAME | DS_3DLOOK 
+CAPTION "Our First Dialog Box" 
+CLASS "DialogClass" 
+BEGIN 
+    EDITTEXT         IDC_EDIT,   15,17,111,13, ES_AUTOHSCROLL | ES_LEFT 
+    DEFPUSHBUTTON   "Say Hello", IDC_BUTTON,    141,10,52,13 
+END 
+ 
+
+FirstMenu  MENU 
+BEGIN 
+    POPUP "Test Controls" 
+    BEGIN
+	MENUITEM "Set Text", IDM_SET 
+	MENUITEM "Clear Text", IDM_CLEAR         
+	MENUITEM "Get Text", IDM_GET 
+        MENUITEM "", , 0x0800 /*MFT_SEPARATOR*/ 
+        MENUITEM "E&xit", IDM_EXIT 
+    END 
+END

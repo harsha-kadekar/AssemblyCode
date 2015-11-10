@@ -1,0 +1,3 @@
+LIBRARY DLLExample
+EXPORTS TestFunc
+

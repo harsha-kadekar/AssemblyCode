@@ -1,0 +1,23 @@
+[PROJECT]
+Type=1
+ReleaseCommandLine=
+DebugCommandLine=
+AutoIncFileVersion=0
+RCSilent=0
+PellesTools=0
+[MAKE]
+ActiveBuild=0
+CompileRC=/v
+RCToObj=
+Assemble=/c /coff /Cp /nologo
+Link=/SUBSYSTEM:WINDOWS /RELEASE /VERSION:4.0 /SECTION:.bss,S /DEF:MouseHook.def   
+Out=
+DebAssemble=/c /coff /Cp /nologo /Fm /Zi /Zd
+DebLink=/SUBSYSTEM:WINDOWS /DEBUG /VERSION:4.0
+DebOut=
+[FILES]
+1=MouseHook.asm
+2=MouseHook.def
+[SHOWFILE]
+1=320000003200000060030000F5010000000000000300000000000000C0
+2=7D0000007D000000AB03000040020000010000000100000000000000EC
